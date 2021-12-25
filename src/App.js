@@ -1,9 +1,17 @@
+import { Component } from "react";
 import "./styles.css";
-
-export default function App() {
-  return (
-    <div className="App">
-      Hello World
-    </div>
-  );
+import PureComponentImplementation from "./PureComponentImplementation.js";
+import RegularComponentImplementation from "./RegularComponentImplementation.js";
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <PureComponentImplementation />
+        <br />
+        <br />
+        <RegularComponentImplementation />
+      </div>
+    );
+  }
 }
+export default App;
